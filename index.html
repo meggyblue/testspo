@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Copier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #loginButton, #copyPlaylistButton {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #status {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spotify Playlist Copier</h1>
+    <button id="loginButton">Login to Spotify</button>
+    <input type="text" id="playlistUrl" placeholder="Enter Spotify Playlist URL">
+    <button id="copyPlaylistButton" style="display:none;">Copy Playlist</button>
+    <div id="status"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
